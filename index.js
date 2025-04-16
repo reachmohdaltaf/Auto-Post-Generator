@@ -8,17 +8,17 @@ const axios = require('axios');
 // Load environment variables
 dotenv.config();
 
-// Check if .env file exists, if not create it with template
-const envPath = path.join(__dirname, '.env');
-if (!fs.existsSync(envPath)) {
-  const envTemplate = `BSKY_USERNAME=your-username.bsky.social
-BSKY_PASSWORD=your-password
-GEMINI_API_KEY=your-gemini-api-key
-`;
-  fs.writeFileSync(envPath, envTemplate);
-  console.log('.env file created. Please fill in your credentials.');
-  process.exit(1);
-}
+// // Check if .env file exists, if not create it with template
+// const envPath = path.join(__dirname, '.env');
+// if (!fs.existsSync(envPath)) {
+//   const envTemplate = `BSKY_USERNAME=your-username.bsky.social
+// BSKY_PASSWORD=your-password
+// GEMINI_API_KEY=your-gemini-api-key
+// `;
+//   fs.writeFileSync(envPath, envTemplate);
+//   console.log('.env file created. Please fill in your credentials.');
+//   process.exit(1);
+// }
 
 // Setup Bluesky agent
 const bsky = new BskyAgent({
