@@ -1,0 +1,10 @@
+{
+  "text": {
+    "parts": [
+      {
+        "text": "Why did the React component get lost?\n\nBecause it didn't have a proper state management strategy! \n"
+      }
+    ],
+    "role": "model"
+  }
+}
